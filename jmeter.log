@@ -1,0 +1,68 @@
+2016/09/29 06:18:19 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: Loading user properties from: /Users/shashidhara/Desktop/JIYOapiTEST/Application/bin/user.properties 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: Loading system properties from: /Users/shashidhara/Desktop/JIYOapiTEST/Application/bin/system.properties 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: Copyright (c) 1998-2014 The Apache Software Foundation 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: Version 2.12 r1636949 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: java.version=1.8.0_91 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: os.name=Mac OS X 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: os.arch=x86_64 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: os.version=10.11.5 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: file.encoding=UTF-8 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: JMeterHome=/Users/shashidhara/Desktop/JIYOapiTEST/Application 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: user.dir  =/Users/shashidhara/Desktop/JIYOapiTEST 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: PWD       =/Users/shashidhara/Desktop/JIYOapiTEST 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: IP: 192.168.1.105 Name: shashidharas-MacBook-Air.local FullName: 192.168.1.105 
+2016/09/29 06:18:19 INFO  - jmeter.services.FileServer: Default base='/Users/shashidhara/Desktop/JIYOapiTEST' 
+2016/09/29 06:18:19 INFO  - jmeter.services.FileServer: Set new base='/Users/shashidhara/Desktop/JIYOapiTEST/Tests' 
+2016/09/29 06:18:19 INFO  - jmeter.JMeter: Loading file: /Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapiFunctionalTest.jmx 
+2016/09/29 06:18:19 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2016/09/29 06:18:19 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2016/09/29 06:18:19 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.7 
+2016/09/29 06:18:20 INFO  - jmeter.save.SaveService: Using SaveService properties file version 1618048 
+2016/09/29 06:18:20 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2016/09/29 06:18:20 INFO  - jmeter.protocol.http.control.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_ 
+2016/09/29 06:18:20 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Cannot find .className property for htmlParser, using default 
+2016/09/29 06:18:20 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is  
+2016/09/29 06:18:20 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is  
+2016/09/29 06:18:20 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is  
+2016/09/29 06:18:20 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is  
+2016/09/29 06:18:20 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2016/09/29 06:18:20 INFO  - jorphan.exec.KeyToolUtils: keytool found at 'keytool' 
+2016/09/29 06:18:20 INFO  - jmeter.protocol.http.proxy.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /Users/shashidhara/Desktop/JIYOapiTEST/Application/bin/proxyserver.jks 
+2016/09/29 06:18:20 INFO  - jmeter.JMeter: Creating summariser <summary> 
+2016/09/29 06:18:20 INFO  - jmeter.engine.StandardJMeterEngine: Listeners will be started after enabling running version 
+2016/09/29 06:18:20 INFO  - jmeter.engine.StandardJMeterEngine: To revert to the earlier behaviour, define jmeterengine.startlistenerslater=false 
+2016/09/29 06:18:20 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/09/29 06:18:20 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/09/29 06:18:20 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/09/29 06:18:20 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2016/09/29 06:18:20 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2016/09/29 06:18:20 INFO  - jmeter.JMeter: Running test (1475110100721) 
+2016/09/29 06:18:20 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : JIYOapiFunctionalTest 
+2016/09/29 06:18:20 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group JIYOapiFunctionalTest. 
+2016/09/29 06:18:20 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/09/29 06:18:20 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/09/29 06:18:20 INFO  - jmeter.threads.JMeterThread: jmeterthread.startearlier=true (see jmeter.properties) 
+2016/09/29 06:18:20 INFO  - jmeter.threads.JMeterThread: Running PostProcessors in forward order 
+2016/09/29 06:18:20 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/09/29 06:18:20 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/09/29 06:18:21 INFO  - jmeter.threads.JMeterThread: Thread started: JIYOapiFunctionalTest 1-1 
+2016/09/29 06:18:21 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = shashidharas-MacBook-Air.local 
+2016/09/29 06:18:21 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
+2016/09/29 06:18:21 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: Setting up HTTPS TrustAll scheme 
+2016/09/29 06:18:21 INFO  - jmeter.util.JsseSSLManager: Using default SSL protocol: TLS 
+2016/09/29 06:18:21 INFO  - jmeter.util.JsseSSLManager: SSL session context: per-thread 
+2016/09/29 06:18:21 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2016/09/29 06:18:21 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2016/09/29 06:18:21 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2016/09/29 06:18:21 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2016/09/29 06:18:21 INFO  - jmeter.protocol.http.parser.HTMLParser: Created org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/09/29 06:18:32 INFO  - jmeter.reporters.Summariser: summary +      3 in    11s =    0.3/s Avg:   188 Min:    70 Max:   394 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0 
+2016/09/29 06:18:59 INFO  - jmeter.threads.JMeterThread: Thread is done: JIYOapiFunctionalTest 1-1 
+2016/09/29 06:18:59 INFO  - jmeter.threads.JMeterThread: Thread finished: JIYOapiFunctionalTest 1-1 
+2016/09/29 06:18:59 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/09/29 06:18:59 INFO  - jmeter.reporters.Summariser: summary +      2 in   5.2s =    0.4/s Avg:   237 Min:    20 Max:   454 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1 
+2016/09/29 06:18:59 INFO  - jmeter.reporters.Summariser: summary =      5 in    38s =    0.1/s Avg:   208 Min:    20 Max:   454 Err:     0 (0.00%) 

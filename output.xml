@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160929 06:18:18.646" generator="Robot 3.0 (Python 2.7.12 on darwin)">
+<suite source="/Users/shashidhara/Desktop/JIYOapiTEST/JIYOapi.robot" id="s1" name="JIYOapi">
+<test id="s1-t1" name="JIYO API Functional Test Automation">
+<kw name="Run Jmeter Analyse Jtl Convert" library="JMeterLib">
+<doc>Runs JMeter and parses log file. Converts results into HTML and SQLite format.</doc>
+<arguments>
+<arg>/Users/shashidhara/Desktop/JIYOapiTEST/Application/bin/jmeter.sh</arg>
+<arg>/Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapiFunctionalTest.jmx</arg>
+<arg>/Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapi.jtl</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20160929 06:18:59.599" level="INFO">Starting JMeter with following parameters:
+ - JMeter path: /Users/shashidhara/Desktop/JIYOapiTEST/Application/bin/jmeter.sh
+ - Test plan path: /Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapiFunctionalTest.jmx
+ - Log file path: /Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapi.jtl
+ - Other parameters:  .
+subprocess.call input list: [u'/Users/shashidhara/Desktop/JIYOapiTEST/Application/bin/jmeter.sh', '-n', '-t', u'/Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapiFunctionalTest.jmx', '-l', u'/Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapi.jtl']
+Value returned by JMeter: 0
+Opening log file /Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapi.jtl
+Log file format: csv
+Extracting samples and assertions from /Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapi.jtl
+Calculating statistical values
+Creating html /Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapi.jtl20160929004859.html
+Creating SQLite DB file /Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapi.jtl20160929004859.sql</msg>
+<msg timestamp="20160929 06:18:59.600" level="INFO">${result} = [{'samplesSuccessRateNoAssert': 100, 'minTime': 20, 'assertions': 0, 'samples': 10, 'averageTime': 532, 'maxTime': 1482, 'assertionPassRate': 0, 'samplesSuccessRateInclAssert': 100}, {'totalTime': 314...</msg>
+<status status="PASS" endtime="20160929 06:18:59.601" starttime="20160929 06:18:18.720"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<msg timestamp="20160929 06:18:59.604" level="INFO">[{'samplesSuccessRateNoAssert': 100, 'minTime': 20, 'assertions': 0, 'samples': 10, 'averageTime': 532, 'maxTime': 1482, 'assertionPassRate': 0, 'samplesSuccessRateInclAssert': 100}, {'totalTime': 314.844, 'samplesErrorInclAssert': 0, 'sampleName': 'Authentication - XSRFToken', 'averageBytes': 767, 'median': 938, 'bytesPerSec': 4.8722541957286785, 'samplesErrorNoAssert': 0, 'throughput': '0.01', 'startTime': datetime.datetime(2016, 9, 29, 6, 13, 6, 591000), 'timeTable': [1482, 394], 'percentil90': 1482, 'endTime': datetime.datetime(2016, 9, 29, 6, 18, 21, 435000), 'kBytesPerSec': '0.0', 'stddev': '544.0', 'samplesSuccessRateInclAssert': 100, 'samplesSuccessRateNoAssert': 100}, {'totalTime': 313.963, 'samplesErrorInclAssert': 0, 'sampleName': 'Authentication - Login', 'averageBytes': 1580, 'median': 425, 'bytesPerSec': 10.064880256590744, 'samplesErrorNoAssert': 0, 'throughput': '0.01', 'startTime': datetime.datetime(2016, 9, 29, 6, 13, 12, 93000), 'timeTable': [748, 102], 'percentil90': 748, 'endTime': datetime.datetime(2016, 9, 29, 6, 18, 26, 56000), 'kBytesPerSec': '0.0', 'stddev': '323.0', 'samplesSuccessRateInclAssert': 100, 'samplesSuccessRateNoAssert': 100}, {'totalTime': 315.35, 'samplesErrorInclAssert': 0, 'sampleName': 'Authentication - Register On Mobile ', 'averageBytes': 1334, 'median': 296, 'bytesPerSec': 8.46044078008562, 'samplesErrorNoAssert': 0, 'throughput': '0.01', 'startTime': datetime.datetime(2016, 9, 29, 6, 13, 16, 735000), 'timeTable': [523, 70], 'percentil90': 523, 'endTime': datetime.datetime(2016, 9, 29, 6, 18, 32, 85000), 'kBytesPerSec': '0.0', 'stddev': '226.5', 'samplesSuccessRateInclAssert': 100, 'samplesSuccessRateNoAssert': 100}, {'totalTime': 328.622, 'samplesErrorInclAssert': 0, 'sampleName': 'Authentication - Register', 'averageBytes': 1335, 'median': 459, 'bytesPerSec': 8.12483643821777, 'samplesErrorNoAssert': 0, 'throughput': '0.01', 'startTime': datetime.datetime(2016, 9, 29, 6, 13, 25, 323000), 'timeTable': [464, 454], 'percentil90': 464, 'endTime': datetime.datetime(2016, 9, 29, 6, 18, 53, 945000), 'kBytesPerSec': '0.0', 'stddev': '5.0', 'samplesSuccessRateInclAssert': 100, 'samplesSuccessRateNoAssert': 100}, {'totalTime': 329.948, 'samplesErrorInclAssert': 0, 'sampleName': 'Authentication - Register With Facebook', 'averageBytes': 1451, 'median': 541, 'bytesPerSec': 8.798356104598302, 'samplesErrorNoAssert': 0, 'throughput': '0.01', 'startTime': datetime.datetime(2016, 9, 29, 6, 13, 29, 188000), 'timeTable': [1063, 20], 'percentil90': 1063, 'endTime': datetime.datetime(2016, 9, 29, 6, 18, 59, 136000), 'kBytesPerSec': '0.0', 'stddev': '521.5', 'samplesSuccessRateInclAssert': 100, 'samplesSuccessRateNoAssert': 100}, {'totalTime': 352.545, 'samplesErrorInclAssert': 0, 'sampleName': 'TOTAL', 'averageBytes': 1293, 'median': 459, 'bytesPerSec': 36.690351586322315, 'samplesErrorNoAssert': 0, 'throughput': '0.03', 'startTime': datetime.datetime(2016, 9, 29, 6, 13, 6, 591000), 'timeTable': [1482, 748, 523, 464, 1063, 394, 102, 70, 454, 20], 'percentil90': 1482, 'endTime': datetime.datetime(2016, 9, 29, 6, 18, 59, 136000), 'kBytesPerSec': '0.0', 'stddev': '438.3', 'samplesSuccessRateInclAssert': 100, 'samplesSuccessRateNoAssert': 100}]</msg>
+<status status="PASS" endtime="20160929 06:18:59.604" starttime="20160929 06:18:59.602"></status>
+</kw>
+<kw type="for" name="${ELEMENT} IN [ @{result} ]">
+<kw type="foritem" name="${ELEMENT} = {'samplesSuccessRateNoAssert': 100, 'minTime': 20, 'assertions': 0, 'samples': 10, 'averageTime': 532, 'maxTime': 1482, 'assertionPassRate': 0, 'samplesSuccessRateInclAssert': 100}">
+<kw name="Log Dictionary" library="Collections">
+<doc>Logs the size and contents of the ``dictionary`` using given ``level``.</doc>
+<arguments>
+<arg>${ELEMENT}</arg>
+</arguments>
+<msg timestamp="20160929 06:18:59.606" level="INFO">Dictionary size is 8 and it contains following items:
+assertionPassRate: 0
+assertions: 0
+averageTime: 532
+maxTime: 1482
+minTime: 20
+samples: 10
+samplesSuccessRateInclAssert: 100
+samplesSuccessRateNoAssert: 100</msg>
+<status status="PASS" endtime="20160929 06:18:59.606" starttime="20160929 06:18:59.606"></status>
+</kw>
+<status status="PASS" endtime="20160929 06:18:59.606" starttime="20160929 06:18:59.605"></status>
+</kw>
+<kw type="foritem" name="${ELEMENT} = {'totalTime': 314.844, 'samplesErrorInclAssert': 0, 'sampleName': 'Authentication - XSRFToken', 'averageBytes': 767, 'median': 938, 'bytesPerSec': 4.8722541957286785, 'samplesErrorNoAssert': 0, 'throu...">
+<kw name="Log Dictionary" library="Collections">
+<doc>Logs the size and contents of the ``dictionary`` using given ``level``.</doc>
+<arguments>
+<arg>${ELEMENT}</arg>
+</arguments>
+<msg timestamp="20160929 06:18:59.607" level="INFO">Dictionary size is 16 and it contains following items:
+averageBytes: 767
+bytesPerSec: 4.87225419573
+endTime: 2016-09-29 06:18:21.435000
+kBytesPerSec: 0.0
+median: 938
+percentil90: 1482
+sampleName: Authentication - XSRFToken
+samplesErrorInclAssert: 0
+samplesErrorNoAssert: 0
+samplesSuccessRateInclAssert: 100
+samplesSuccessRateNoAssert: 100
+startTime: 2016-09-29 06:13:06.591000
+stddev: 544.0
+throughput: 0.01
+timeTable: [1482, 394]
+totalTime: 314.844</msg>
+<status status="PASS" endtime="20160929 06:18:59.607" starttime="20160929 06:18:59.607"></status>
+</kw>
+<status status="PASS" endtime="20160929 06:18:59.607" starttime="20160929 06:18:59.607"></status>
+</kw>
+<kw type="foritem" name="${ELEMENT} = {'totalTime': 313.963, 'samplesErrorInclAssert': 0, 'sampleName': 'Authentication - Login', 'averageBytes': 1580, 'median': 425, 'bytesPerSec': 10.064880256590744, 'samplesErrorNoAssert': 0, 'throughp...">
+<kw name="Log Dictionary" library="Collections">
+<doc>Logs the size and contents of the ``dictionary`` using given ``level``.</doc>
+<arguments>
+<arg>${ELEMENT}</arg>
+</arguments>
+<msg timestamp="20160929 06:18:59.608" level="INFO">Dictionary size is 16 and it contains following items:
+averageBytes: 1580
+bytesPerSec: 10.0648802566
+endTime: 2016-09-29 06:18:26.056000
+kBytesPerSec: 0.0
+median: 425
+percentil90: 748
+sampleName: Authentication - Login
+samplesErrorInclAssert: 0
+samplesErrorNoAssert: 0
+samplesSuccessRateInclAssert: 100
+samplesSuccessRateNoAssert: 100
+startTime: 2016-09-29 06:13:12.093000
+stddev: 323.0
+throughput: 0.01
+timeTable: [748, 102]
+totalTime: 313.963</msg>
+<status status="PASS" endtime="20160929 06:18:59.608" starttime="20160929 06:18:59.608"></status>
+</kw>
+<status status="PASS" endtime="20160929 06:18:59.609" starttime="20160929 06:18:59.607"></status>
+</kw>
+<kw type="foritem" name="${ELEMENT} = {'totalTime': 315.35, 'samplesErrorInclAssert': 0, 'sampleName': 'Authentication - Register On Mobile ', 'averageBytes': 1334, 'median': 296, 'bytesPerSec': 8.46044078008562, 'samplesErrorNoAssert': 0...">
+<kw name="Log Dictionary" library="Collections">
+<doc>Logs the size and contents of the ``dictionary`` using given ``level``.</doc>
+<arguments>
+<arg>${ELEMENT}</arg>
+</arguments>
+<msg timestamp="20160929 06:18:59.609" level="INFO">Dictionary size is 16 and it contains following items:
+averageBytes: 1334
+bytesPerSec: 8.46044078009
+endTime: 2016-09-29 06:18:32.085000
+kBytesPerSec: 0.0
+median: 296
+percentil90: 523
+sampleName: Authentication - Register On Mobile 
+samplesErrorInclAssert: 0
+samplesErrorNoAssert: 0
+samplesSuccessRateInclAssert: 100
+samplesSuccessRateNoAssert: 100
+startTime: 2016-09-29 06:13:16.735000
+stddev: 226.5
+throughput: 0.01
+timeTable: [523, 70]
+totalTime: 315.35</msg>
+<status status="PASS" endtime="20160929 06:18:59.610" starttime="20160929 06:18:59.609"></status>
+</kw>
+<status status="PASS" endtime="20160929 06:18:59.610" starttime="20160929 06:18:59.609"></status>
+</kw>
+<kw type="foritem" name="${ELEMENT} = {'totalTime': 328.622, 'samplesErrorInclAssert': 0, 'sampleName': 'Authentication - Register', 'averageBytes': 1335, 'median': 459, 'bytesPerSec': 8.12483643821777, 'samplesErrorNoAssert': 0, 'through...">
+<kw name="Log Dictionary" library="Collections">
+<doc>Logs the size and contents of the ``dictionary`` using given ``level``.</doc>
+<arguments>
+<arg>${ELEMENT}</arg>
+</arguments>
+<msg timestamp="20160929 06:18:59.610" level="INFO">Dictionary size is 16 and it contains following items:
+averageBytes: 1335
+bytesPerSec: 8.12483643822
+endTime: 2016-09-29 06:18:53.945000
+kBytesPerSec: 0.0
+median: 459
+percentil90: 464
+sampleName: Authentication - Register
+samplesErrorInclAssert: 0
+samplesErrorNoAssert: 0
+samplesSuccessRateInclAssert: 100
+samplesSuccessRateNoAssert: 100
+startTime: 2016-09-29 06:13:25.323000
+stddev: 5.0
+throughput: 0.01
+timeTable: [464, 454]
+totalTime: 328.622</msg>
+<status status="PASS" endtime="20160929 06:18:59.610" starttime="20160929 06:18:59.610"></status>
+</kw>
+<status status="PASS" endtime="20160929 06:18:59.610" starttime="20160929 06:18:59.610"></status>
+</kw>
+<kw type="foritem" name="${ELEMENT} = {'totalTime': 329.948, 'samplesErrorInclAssert': 0, 'sampleName': 'Authentication - Register With Facebook', 'averageBytes': 1451, 'median': 541, 'bytesPerSec': 8.798356104598302, 'samplesErrorNoAsser...">
+<kw name="Log Dictionary" library="Collections">
+<doc>Logs the size and contents of the ``dictionary`` using given ``level``.</doc>
+<arguments>
+<arg>${ELEMENT}</arg>
+</arguments>
+<msg timestamp="20160929 06:18:59.611" level="INFO">Dictionary size is 16 and it contains following items:
+averageBytes: 1451
+bytesPerSec: 8.7983561046
+endTime: 2016-09-29 06:18:59.136000
+kBytesPerSec: 0.0
+median: 541
+percentil90: 1063
+sampleName: Authentication - Register With Facebook
+samplesErrorInclAssert: 0
+samplesErrorNoAssert: 0
+samplesSuccessRateInclAssert: 100
+samplesSuccessRateNoAssert: 100
+startTime: 2016-09-29 06:13:29.188000
+stddev: 521.5
+throughput: 0.01
+timeTable: [1063, 20]
+totalTime: 329.948</msg>
+<status status="PASS" endtime="20160929 06:18:59.611" starttime="20160929 06:18:59.611"></status>
+</kw>
+<status status="PASS" endtime="20160929 06:18:59.611" starttime="20160929 06:18:59.610"></status>
+</kw>
+<kw type="foritem" name="${ELEMENT} = {'totalTime': 352.545, 'samplesErrorInclAssert': 0, 'sampleName': 'TOTAL', 'averageBytes': 1293, 'median': 459, 'bytesPerSec': 36.690351586322315, 'samplesErrorNoAssert': 0, 'throughput': '0.03', 'sta...">
+<kw name="Log Dictionary" library="Collections">
+<doc>Logs the size and contents of the ``dictionary`` using given ``level``.</doc>
+<arguments>
+<arg>${ELEMENT}</arg>
+</arguments>
+<msg timestamp="20160929 06:18:59.612" level="INFO">Dictionary size is 16 and it contains following items:
+averageBytes: 1293
+bytesPerSec: 36.6903515863
+endTime: 2016-09-29 06:18:59.136000
+kBytesPerSec: 0.0
+median: 459
+percentil90: 1482
+sampleName: TOTAL
+samplesErrorInclAssert: 0
+samplesErrorNoAssert: 0
+samplesSuccessRateInclAssert: 100
+samplesSuccessRateNoAssert: 100
+startTime: 2016-09-29 06:13:06.591000
+stddev: 438.3
+throughput: 0.03
+timeTable: [1482, 748, 523, 464, 1063, 394, 102, 70, 454, 20]
+totalTime: 352.545</msg>
+<status status="PASS" endtime="20160929 06:18:59.612" starttime="20160929 06:18:59.611"></status>
+</kw>
+<status status="PASS" endtime="20160929 06:18:59.612" starttime="20160929 06:18:59.611"></status>
+</kw>
+<status status="PASS" endtime="20160929 06:18:59.612" starttime="20160929 06:18:59.604"></status>
+</kw>
+<kw name="Analyse Jtl Convert To Html" library="JMeterLib">
+<doc>Parses JMeter log file. Converts results into HTML format.</doc>
+<arguments>
+<arg>/Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapi.jtl</arg>
+</arguments>
+<msg timestamp="20160929 06:19:00.010" level="INFO">Opening log file /Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapi.jtl
+Log file format: csv
+Extracting samples and assertions from /Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapi.jtl
+Calculating statistical values
+Creating html /Users/shashidhara/Desktop/JIYOapiTEST/Tests/JIYOapi.jtl20160929004900.html</msg>
+<status status="PASS" endtime="20160929 06:19:00.010" starttime="20160929 06:18:59.612"></status>
+</kw>
+<status status="PASS" endtime="20160929 06:19:00.011" critical="yes" starttime="20160929 06:18:18.719"></status>
+</test>
+<status status="PASS" endtime="20160929 06:19:00.012" starttime="20160929 06:18:18.650"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="JIYOapi" pass="1">JIYOapi</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

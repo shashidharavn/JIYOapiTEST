@@ -1,0 +1,10 @@
+1475109786591,1482,Authentication - XSRFToken,200,OK,JIYOapiFunctionalTest 1-1,text,true,1131,1,1,1482
+1475109792093,748,Authentication - Login,200,OK,JIYOapiFunctionalTest 1-1,text,true,2757,1,1,608
+1475109796735,523,Authentication - Register On Mobile ,200,OK,JIYOapiFunctionalTest 1-1,text,true,2265,1,1,523
+1475109805323,464,Authentication - Register,200,OK,JIYOapiFunctionalTest 1-1,text,true,2267,1,1,458
+1475109809188,1063,Authentication - Register With Facebook,200,OK,JIYOapiFunctionalTest 1-1,text,true,2500,1,1,1057
+1475110101435,394,Authentication - XSRFToken,200,OK,JIYOapiFunctionalTest 1-1,text,true,403,1,1,393
+1475110106056,102,Authentication - Login,200,OK,JIYOapiFunctionalTest 1-1,text,true,403,1,1,102
+1475110112085,70,Authentication - Register On Mobile ,200,OK,JIYOapiFunctionalTest 1-1,text,true,403,1,1,70
+1475110133945,454,Authentication - Register,200,OK,JIYOapiFunctionalTest 1-1,text,true,403,1,1,454
+1475110139136,20,Authentication - Register With Facebook,200,OK,JIYOapiFunctionalTest 1-1,text,true,403,1,1,20
