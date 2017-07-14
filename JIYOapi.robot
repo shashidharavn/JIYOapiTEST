@@ -6,7 +6,7 @@ Library           Collections
 
 
 JIYO API Functional Test Automation
-    ${result}    run jmeter analyse jtl convert    ${CURDIR}/Application/bin/jmeter.sh    ${CURDIR}/Tests/JIYOmeditationRoom.jmx    ${CURDIR}/Tests/JIYOapi.jtl
+    ${result}    run jmeter analyse jtl convert    ${CURDIR}/Application/bin/jmeter.sh    ${CURDIR}/Tests/JIYOmeditationRoom.jmx    ${CURDIR}/Tests/.jtl
     log    ${result}
     :FOR    ${ELEMENT}    IN    @{result}
     \    log dictionary    ${ELEMENT}
